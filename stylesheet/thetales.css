@@ -1,0 +1,30 @@
+p {
+  margin: 40px;
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+h2 {
+  margin: 40px;
+  font-weight: bold;
+}
+
+ol {
+  margin: 40px;
+}
+
+ol li {
+  font-size: 30px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/*# sourceMappingURL=thetales.css.map */

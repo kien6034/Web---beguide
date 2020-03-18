@@ -1,0 +1,29 @@
+$margin: 40px;
+
+p{
+    margin: $margin;
+    font-size: 20px;
+}
+
+h1{
+    text-align: center;
+    font-size:60px;
+}
+
+h2{
+    margin: $margin;
+    font-weight: bold;
+}
+ol{
+    margin: $margin;
+    li{
+        font-size: 30px;
+    }
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

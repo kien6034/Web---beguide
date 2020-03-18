@@ -1,0 +1,33 @@
+#left-header, #right-header {
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  border: 2px solid black;
+  text-align: center;
+  color: #252720;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  color: #926d8a;
+}
+
+#left-header {
+  background-color: #6ba7b6;
+}
+
+#right-header {
+  background-color: #7a2d2d;
+}
+
+div div div div p {
+  font-size: 17px;
+}
+
+.year {
+  font-weight: bold;
+}
+/*# sourceMappingURL=background.css.map */
