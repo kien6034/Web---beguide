@@ -1,0 +1,46 @@
+body{
+    background-color: greenyellow;
+}
+
+#navbar{
+    background-color: #222;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 0px 20px 0px;
+
+    .logo{
+        position: relative;
+        font-weight: 700;
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.6s;
+        padding-left: 20px;
+    }
+    ul{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin: 0;
+        li{
+            position: relative;
+            list-style: none;
+            a{
+                position: relative;
+                margin: 0 20px;
+                text-decoration: none;
+                color: #fff;
+                font-size: 18px;
+                letter-spacing: 2px;
+                font-weight: 500;
+            }
+        }
+    }
+   
+}
