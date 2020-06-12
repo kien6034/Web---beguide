@@ -8,6 +8,7 @@
         <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel = "stylesheet" href = "index.css">
+        <script src = "index.js"></script>
     </head>
 
     <body> 
@@ -20,26 +21,72 @@
             </ul>
         </div>   
         <div class = "banner">
-            <h1>Caption here</h1>>
+            <h1>We are<br>
+                <span class = "txt-type" data-wait = "3000" data-words='["TourGuides", "Beautiful", "Creative"]'></span>
+            </h1>
         </div>
         <div class = "content">
             <div class = "seperateBar"></div>
-            <div class = "message">
-                <!-- <h1 data-text ="We're building the Website...">We're building the Website... </h1> -->
-            </div>
-            <div class = "container">
-                <section>
 
-                </section>
+            <!-- Message -->
+            <div class = "message">
+                <h1>What do we have so far...!</h1>
+            </div>
+
+            <!-- Card -->
+            <div class = "main container">
+                <seciton class = "card" data-aos="zoom-in">
+                    <img src = "/img/topic/hanoiAttraction.png">
+                    <div>
+                        <h3>Hanoi Attraction</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, voluptatum! Quidem reiciendis optio ipsa aut corrupti fuga saepe impedit tempora.</p> 
+                        <form action = "/topic/HanoiAttraction/hanoiAttraction.html">
+                            <button type= "submit" class = "btn btn-outline-secondary"> Explore</a>
+                        </form>
+                    </div>
+                </seciton>
+                <seciton class = "card" data-aos="zoom-in-up">
+                    <img src = "/img/topic/theVietnamWar.png">
+                    <div>
+                        <h3>The Vietnam War</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, voluptatum! Quidem reiciendis optio ipsa aut corrupti fuga saepe impedit tempora.</p> 
+                        <form action = "/topic/HanoiAttraction/hanoiAttraction.html">
+                            <button type= "submit" class = "btn btn-outline-secondary"> Explore</a>
+                        </form>
+                    </div>
+                </seciton>
+                <seciton class = "card" data-aos="zoom-in-up">
+                    <img src = "/img/topic/English.png">
+                    <div>
+                        <h3>Better English?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, voluptatum! Quidem reiciendis optio ipsa aut corrupti fuga saepe impedit tempora.</p> 
+                        <form action = "/topic/HanoiAttraction/hanoiAttraction.html">
+                            <button type= "submit" class = "btn btn-outline-secondary"> Explore</a>
+                        </form>
+                    </div>
+                </seciton>
             </div>
         </div>
 
-
-        <script type = "text/javascript">
-            window.addEventListener("scroll", ()=>{
-                const nav = document.querySelector('#navbar');
-                nav.classList.toggle("sticky", window.scrollY>0)
-            });
-        </script> 
+        <div class = "footer">
+            <h3> Join us!</h3>
+            <div class ="col-12 social">
+                <a href = "#"><i class ="fab fa-facebook"></i></a>
+                <a href = "#"><i class ="fab fa-google-plus-g"></i></a>
+                <a href = "#"><i class ="fab fa-youtube"></i></a>
+            </div>
+            <div class ="copy-right">
+                &copy Be Nice
+            </div>
+        </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init(
+              {
+                  offset: 300,
+                  duration: 1000
+              }
+          );
+        </script>
     </body>
-</html>
+</html> 

@@ -14,12 +14,22 @@ body{
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(img/vendor.png);
+    background: linear-gradient( rgba(37, 37, 37, 0.5), rgba(0, 0, 0, 0.5) ), url(img/vendor.png);
     background-size: cover;
+    
     h1{
         position: absolute;
-        top:50vh;
-        left: 40vw;
+        color: rgb(13, 97, 136);
+        text-shadow: 2px 2px 2px rgb(12, 12, 12);
+        top:40vh;
+        left: 45vw;
+        font-size: 50px;
+        .txt-type{
+            color: rgb(182, 152, 55);
+            .txt{
+                border-right: 0.2rem solid #777;
+            }
+        }
     }
 }
 #navbar{
@@ -85,9 +95,8 @@ body{
 //container
 .content{
     position: relative;
-    height: 100vh;
     .seperateBar{
-        position: absolute;
+        position: relative;
         top: 0px;
         left: 0px;
         height: 20px;
@@ -95,52 +104,94 @@ body{
         background-image: linear-gradient(rgb(46, 42, 42), rgb(116, 116, 82));
         box-shadow: 0 .5em 1em rgba(0,0,0,0.3);
     }
+    .message{
+        display: flex;
+        height: 200px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .main{
+        .card{
+            position: relative;
+            box-shadow: 0 .5em 1em rgba(0,0,0,0.3);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2rem;
+            background: #f1f1f1;
+            margin-bottom: 2rem;
+            img{
+                width: 100%;
+            }
+            div{
+                padding: 2rem;
+            }
+            h3{
+                font-size: 35px;
+            }
+            p{
+                font-size: 20px;
+            }
+            // button{
+            //     position: absolute;
+            //     bottom: 50px;
+            // }
+        }
+    
+    }
     
 }
 
-// .message{
-//     position: relative;
-//     h1{
-//         position: absolute;
-//         top: 70px;
-//         left: 50%;
-//         transform: translate(-50%, -50%);
-//         text-transform: uppercase;
-//         font-family: consolas;
-//         letter-spacing: 5px;
-//         padding: 0;
-//         margin: 0;
-//         font-size: 35px;
-//         color: transparent;
-//     }
-//     h1:before{
-//         content: attr(data-text);
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         width: 100%;
-//         height: 100%;
-//         color: #000;
-//         overflow: hidden;
-//         border-right: 1px solid #000;
-//         animation: type 6s steps(26) infinite;
-//         white-space: nowrap;
-//     }
-// }
-// @keyframes type{
-//     0%{
-//         width: 0;
-//     }
-//     50%{
-//         width: 100%;
-//     }
-//     100%{
-//         width: 0;
-//     }
-// }
-#test{
+.footer{
+    padding: 20px;
+    margin-top: 200px;
     position: relative;
-    height: 200px;
-    width: 200px;
-    background-color: khaki;
+    height: 150px;
+    background-color: rgb(69, 67, 100);
+    text-align: center;
+    h3{
+        color: rgb(209, 206, 206);
+        text-shadow: 1px 1px 5px #000;
+    }
+    .social{
+        a {
+            font-size: 2.5em;
+            padding: 3rem;
+        }
+          
+        .fa-facebook{
+        color: #3b5998;
+        }
+        
+        .fa-google-plus-g{
+        color: #dd4b39;
+        }
+        .fa-youtube{
+        color: #bb0000;
+        }
+        
+        .fa-facebook:hover, 
+        .fa-google-plus-g:hover, 
+        .fa-youtube:hover{
+            color: #d5d5d5;
+        }
+    }
+    .copy-right{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main{
+        .card{
+            display: grid;
+            grid-template-columns: 1fr !important;
+        }
+    }
+    .banner{
+        h1{
+            font-size: 35px;
+            left: 35vw;
+        }
+    }
 }
