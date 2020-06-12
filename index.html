@@ -6,21 +6,40 @@
         <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel = "stylesheet" href = "index.css">
     </head>
 
     <body> 
-        <div class = "banner">
-
-        </div>
+        
         <div id = "navbar">
             <a class = "logo" href = "#"> My web</a>
             <ul>
-                <li><a href = "#">Archives</a></li>
-                <li><a href = "#"> Second</a></li>
-        
+                <li><a href = "#">About</a></li>
+                <li><a href = "#"> Explore</a></li>
             </ul>
+        </div>   
+        <div class = "banner">
+            <h1>Caption here</h1>>
         </div>
+        <div class = "content">
+            <div class = "seperateBar"></div>
+            <div class = "message">
+                <!-- <h1 data-text ="We're building the Website...">We're building the Website... </h1> -->
+            </div>
+            <div class = "container">
+                <section>
+
+                </section>
+            </div>
+        </div>
+
+
+        <script type = "text/javascript">
+            window.addEventListener("scroll", ()=>{
+                const nav = document.querySelector('#navbar');
+                nav.classList.toggle("sticky", window.scrollY>0)
+            });
+        </script> 
     </body>
 </html>
