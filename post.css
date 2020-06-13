@@ -173,8 +173,26 @@
 }
 
 .flip-card .front .para, .flip-card .frame .para, .flip-card .back .para {
-  padding: 0px 20px 20px 20px;
+  padding: 0px 20px 60px 20px;
   font-size: 20px;
+}
+
+.postInfo {
+  margin-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.postInfo .contributor {
+  width: 200px;
+}
+
+.postInfo .contributor .contrib {
+  font-style: italic;
 }
 
 .phoneNav {
