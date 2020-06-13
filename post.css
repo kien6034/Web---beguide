@@ -1,4 +1,150 @@
-body {
-  background-color: green;
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sideNav {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#c5ab37), to(#58d7db));
+  background-image: linear-gradient(to bottom right, #c5ab37, #58d7db);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 200px;
+  color: white;
+}
+
+.sideNav .mainPage {
+  text-align: center;
+}
+
+.sideNav .mainPage a {
+  font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-weight: 600;
+  color: #dae767;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.sideNav .sideNavHeader {
+  text-align: center;
+  font-weight: 500;
+  color: wheat;
+  font-size: 25px;
+}
+
+.sideNav ul {
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+  counter-reset: item;
+}
+
+.sideNav ul li {
+  list-style: none;
+  height: 50px;
+  position: relative;
+}
+
+.sideNav ul li a {
+  text-decoration: none;
+  color: #f7fcfc;
+  font-weight: 500;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.sideNav ul li a:hover {
+  background-color: #cebf39;
+  border-radius: 10px;
+}
+
+.currentNav {
+  background-color: #65704c;
+  border-radius: 10px;
+}
+
+.post {
+  padding-left: 200px !important;
+}
+
+.post .header {
+  text-align: center;
+  padding: 50px;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.post .content .flip-card {
+  margin-bottom: 60px;
+  padding: 0;
+  position: relative;
+}
+
+.post .content .flip-card img {
+  width: 100%;
+}
+
+.post .content .flip-card a {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+
+.post .content .flip-card .frame {
+  opacity: 0;
+}
+
+.post .content .flip-card .flip-card-inner {
+  -webkit-box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.post .content .flip-card .flip-card-inner .front, .post .content .flip-card .flip-card-inner .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+.post .content .flip-card .flip-card-inner .back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip-card .front, .flip-card .frame, .flip-card .back {
+  position: relative;
+}
+
+.flip-card .front .para-header, .flip-card .frame .para-header, .flip-card .back .para-header {
+  padding: 10px 20px 5px 20px;
+  font-size: 30px;
+}
+
+.flip-card .front .para, .flip-card .frame .para, .flip-card .back .para {
+  padding: 0px 20px 20px 20px;
+  font-size: 20px;
 }
 /*# sourceMappingURL=post.css.map */

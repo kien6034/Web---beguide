@@ -68,6 +68,7 @@ body {
   -webkit-transition: 0.6s;
   transition: 0.6s;
   padding-left: 20px;
+  font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
 
 #navbar ul {
@@ -187,7 +188,7 @@ body {
 }
 
 .footer .social a {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   padding: 3rem;
 }
 
@@ -223,6 +224,17 @@ body {
   .banner h1 {
     font-size: 35px;
     left: 35vw;
+  }
+  .footer .social a {
+    font-size: 2em;
+    padding: 1.5rem;
+  }
+  #navbar .logo {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  #navbar ul li a {
+    margin: 0 10px;
   }
 }
 /*# sourceMappingURL=index.css.map */
