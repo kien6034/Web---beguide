@@ -15,3 +15,21 @@ document.addEventListener('dblclick', event=>{
       
     }
 })
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    phoneBar();
+})
+
+function phoneBar(){
+    const burger = document.querySelector('.burger');
+    const sideNav = document.querySelector('.sideNav');
+    burger.addEventListener('click', ()=>{
+        burger.classList.toggle('toggle');
+        if(sideNav.style.display == 'block'){
+            sideNav.style.display = 'none';
+        }
+        else {
+            sideNav.style.display = 'block';
+        }
+    })
+}

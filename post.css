@@ -15,6 +15,7 @@
   left: 0px;
   height: 100vh;
   width: 200px;
+  display: block;
   color: white;
 }
 
@@ -71,12 +72,40 @@
   border-radius: 10px;
 }
 
+.phoneNav {
+  z-index: 3;
+  position: fixed;
+  background-color: #e6e0e0;
+  top: 0px;
+  left: 0px;
+  height: 40px;
+  width: 100%;
+}
+
+.phoneNav .burger {
+  z-index: 3;
+  cursor: pointer;
+  position: fixed;
+  padding: 5px 0 5px 15px;
+  display: block;
+}
+
+.phoneNav .burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #4e4b4b;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .post {
   padding-left: 200px !important;
 }
 
 .post .header {
   text-align: center;
+  text-shadow: 1px 1px 1px #99a16d;
   padding: 50px;
   font-size: 50px;
   font-weight: 500;
@@ -146,5 +175,42 @@
 .flip-card .front .para, .flip-card .frame .para, .flip-card .back .para {
   padding: 0px 20px 20px 20px;
   font-size: 20px;
+}
+
+.phoneNav {
+  display: none;
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 768px) {
+  .phoneNav {
+    display: block;
+  }
+  .sideNav {
+    z-index: 3;
+    top: 40px;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+  .post {
+    padding: 20px !important;
+  }
+  .post .header {
+    font-size: 40px;
+  }
 }
 /*# sourceMappingURL=post.css.map */

@@ -14,7 +14,7 @@
     left: 0px;
     height: 100vh;
     width: 200px;
-   
+    display: block;
     color: white;
     .mainPage{
         text-align: center;
@@ -64,10 +64,34 @@
     border-radius: 10px;
 }
 
+.phoneNav{
+    z-index: 3;
+    position: fixed;
+    background-color: rgb(230, 224, 224);
+    top: 0px;
+    left: 0px;
+    height: 40px;
+    width: 100%;
+    .burger{
+        z-index: 3;
+        cursor: pointer;
+        position: fixed;
+        padding: 5px 0 5px 15px;
+        display: block;
+        div {
+            width: 25px;
+            height: 3px;
+            background-color: rgb(78, 75, 75);
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+    }
+}
 .post{
     padding-left: 200px !important;
     .header{
         text-align: center;
+        text-shadow: 1px 1px 1px rgb(153, 161, 109);
         padding: 50px;
         font-size: 50px;
         font-weight: 500;
@@ -126,6 +150,40 @@
         .para{
             padding: 0px 20px 20px 20px;
             font-size: 20px;
+        }
+    }
+}
+
+.phoneNav{
+    display: none;
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 768px){
+    .phoneNav{
+        display: block;
+    }
+    .sideNav{
+        z-index: 3;
+        top: 40px;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    .post{
+        padding: 20px !important;
+        .header{
+            font-size: 40px;
         }
     }
 }
