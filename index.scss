@@ -143,6 +143,22 @@ body{
     
 }
 
+//hr
+.line{
+    margin: 100px !important;
+    font-weight: 900;
+}
+
+//Meet the team
+
+.member{
+    margin-bottom: 40px;
+    .card{
+        box-shadow: 0 .5em 1em rgba(0,0,0,0.3);
+    }
+}
+
+
 .footer{
     padding: 20px;
     margin-top: 200px;
@@ -182,13 +198,23 @@ body{
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1200px){
     .main{
         .card{
             display: grid;
             grid-template-columns: 1fr !important;
         }
     }
+    .member{
+        .card{
+            display: grid;
+            grid-template-columns: 1fr 1fr !important;
+            grid-gap: 2rem;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    
     .banner{
         h1{
             font-size: 35px;
